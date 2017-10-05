@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>slider</title>
+<link rel="stylesheet" href="style/bas.css">
+</head>
+
+<body>
+
+<div id="app">
+  <div id="slider">
+    <div id="belt" ref="belt"v-bind:style="{'transform': 'translateX('+value+'px)'}">
+      <div v-for="slide in slides">{{slide}}</div>
+    </div>
+  </div>
+  <div id="btn_wrapper">
+    <button v-on:click="left">left</button>
+    <button v-on:click="right">right</button>
+       <button @click="addSlide">add slide</button>
+       <button @click="removeSlide">remove slide</button>
+  </div>
+</div>
+<script src="https://unpkg.com/vue"></script>
+    <script src="src/ap.js"></script>
+</body>
+</html>

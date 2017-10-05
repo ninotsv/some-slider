@@ -1,0 +1,63 @@
+    body, html {
+  height: 100vh;
+  background:  rgb(176, 217, 247);
+}
+
+#app {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#slider {
+  width: 600px;
+  height: 600px;
+background-color: gray;
+  overflow: hidden;
+}
+#slider #belt {
+  width:4200px;
+  height: 100%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#slider #belt > div {
+  width: 600px;
+  height: 100%;
+
+}
+#slider #belt > div:nth-child(1) {
+background:rgb(181, 91, 8);
+}
+#slider #belt > div:nth-child(2) {
+  background: rgb(105, 80, 75);
+}
+#slider #belt > div:nth-child(3) {
+  background: olive;
+}
+#slider #belt > div:nth-child(4) {
+  background: rgb(45, 26, 54);
+}
+#slider #belt > div:nth-child(5) {
+  background: yellow;
+}
+#slider #belt > div:nth-child(6) {
+  background: darkgray;
+}
+#slider #belt > div:nth-child(7) {
+  background: rgb(205, 111, 228);
+}
