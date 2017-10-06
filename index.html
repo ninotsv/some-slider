@@ -5,9 +5,7 @@
   <title>slider</title>
 <link rel="stylesheet" href="style/bas.css">
 </head>
-
 <body>
-
 <div id="app">
   <div id="slider">
     <div id="belt" ref="belt"v-bind:style="{'transform': 'translateX('+value+'px)'}">
@@ -17,8 +15,8 @@
   <div id="btn_wrapper">
     <button v-on:click="left">left</button>
     <button v-on:click="right">right</button>
-       <button @click="addSlide">add slide</button>
-       <button @click="removeSlide">remove slide</button>
+       <button v-on:click="addSlide">add slide</button>
+       <button v-on:click="removeSlide">remove slide</button>
   </div>
 </div>
 <script src="https://unpkg.com/vue"></script>
